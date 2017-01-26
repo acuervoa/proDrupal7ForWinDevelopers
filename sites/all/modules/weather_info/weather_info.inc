@@ -22,5 +22,37 @@ function weather_info_get_weather($location, $language) {
 }
 
 function weather_info_temp($in_temp, $unit, $unit_system) {
+
+  switch ($unit) {
+    case 'C':
+      if ($unit_system == 'SI') {
+        $out_temp = $in_temp;
+      }else {
+        $out_temp = weather_info_f_to_c($in_temp);
+      }
+      break;
+    case 'F':
+      if ($unit_system == 'SI') {
+        $out_temp = weather_info_c_to_f($in_temp);
+      }else {
+        $out_temp = $in_temp;
+      }
+      break;
+    case 'K':
+      if ($unit_system == 'SI') {
+        $out_temp = weather_info_c_to_k($in_temp);
+      }else {
+        $out_temp = weather_info_f_to_k($in_temp);
+      }
+      break;
+    case 'R':
+      if ($unit_system == 'SI') {
+        $out_temp = weather_info_c_to_r($in_temp);
+      }else {
+        $out_temp = weather_info_f_to_r($in_temp);
+      }
+      break;
+  }
+
   return sprintf('%s&deg;%a', $in_temp, $unit);
 }
