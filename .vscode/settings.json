@@ -1,0 +1,13 @@
+// Coloque su configuración en este archivo para sobrescribir la configuración predeterminada y de usuario.
+{
+    "files.associations": {
+        "*.php3": "php",
+        "*.phtml": "php",
+        "*.php5": "php",
+        "*.php4": "php",
+        "*.inc": "php",
+        "*.profile": "php",
+        "*.module": "php",
+        "*.install": "php"
+    }
+}

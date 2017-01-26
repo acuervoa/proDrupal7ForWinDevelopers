@@ -1,0 +1,1919 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"appl",
+				"applyDiscountOverThreshold"
+			],
+			[
+				"get",
+				"getShippingAddress〔function〕"
+			],
+			[
+				"gold",
+				"gold_customer"
+			],
+			[
+				"Biorr",
+				"Biorrhytms"
+			],
+			[
+				"dif",
+				"diffInDays〔function〕"
+			],
+			[
+				"assertE",
+				"assertEquals"
+			],
+			[
+				"de",
+				"text-decoration"
+			],
+			[
+				"array_c",
+				"array_count_values〔function〕"
+			],
+			[
+				"setCode",
+				"setPackageCode"
+			],
+			[
+				"Bas",
+				"BasicInspection"
+			],
+			[
+				"ur",
+				"urlencode"
+			],
+			[
+				"html_",
+				"htmlspecialchars_decode"
+			],
+			[
+				"form",
+				"formtext\tPHP textfield-illuminateForm"
+			],
+			[
+				"packageSe",
+				"packageServiceModel"
+			],
+			[
+				"package",
+				"packageServiceSelected"
+			],
+			[
+				"dataAr",
+				"data.arrayAlternativeDates"
+			],
+			[
+				"packa",
+				"packageServiceSelected"
+			],
+			[
+				"packageSEr",
+				"packageServiceSelected"
+			],
+			[
+				"variet",
+				"varietyInfo"
+			],
+			[
+				"code",
+				"$codePackageServiceModelForActivity〔variable〕"
+			],
+			[
+				"getCh",
+				"getCheckin"
+			],
+			[
+				"var",
+				"varietyInfo"
+			],
+			[
+				"ESBA",
+				"$ESBActivity〔variable〕"
+			],
+			[
+				"clearA",
+				"cleanAlternativeActivities"
+			],
+			[
+				"cleanAltera",
+				"cleanAlternativeActivity"
+			],
+			[
+				"keyA",
+				"$keyAlternativePackageServices〔variable〕"
+			],
+			[
+				"alternativePacka",
+				"alternativePackageServiceBookingOption"
+			],
+			[
+				"keyBoo",
+				"keyBookingOption"
+			],
+			[
+				"packageSer",
+				"packageServicesForActivities"
+			],
+			[
+				"alternativePa",
+				"alternativePackageServices"
+			],
+			[
+				"availa",
+				"$availableCMSAccommodations〔variable〕"
+			],
+			[
+				"preselected",
+				"preSelectedAccommodation"
+			],
+			[
+				"serviceN",
+				"$serviceNotLoaded〔variable〕"
+			],
+			[
+				"alternativeActi",
+				"$alternativeActivities〔variable〕"
+			],
+			[
+				"not",
+				"$notInitialAvailabilityActivities〔variable〕"
+			],
+			[
+				"ch",
+				"changeRespuestaValues"
+			],
+			[
+				"setPac",
+				"setPackageServiceCode"
+			],
+			[
+				"getChe",
+				"getCheckin"
+			],
+			[
+				"alternat",
+				"$alternativeActivities〔variable〕"
+			],
+			[
+				"chec",
+				"checkout"
+			],
+			[
+				"ESBAc",
+				"ESBActivitiesCodes"
+			],
+			[
+				"activityAl",
+				"activityAlternatives"
+			],
+			[
+				"acci",
+				"accommodations"
+			],
+			[
+				"accomo",
+				"accommodations"
+			],
+			[
+				"ESB",
+				"ESBPackageServiceAvailabilityClient"
+			],
+			[
+				"getC",
+				"getCheckin"
+			],
+			[
+				"newCh",
+				"newCheckout"
+			],
+			[
+				"newC",
+				"newChecking"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"class",
+				"class\tPHP New Class"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.inc",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.info",
+			"settings":
+			{
+				"buffer_size": 220,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.module",
+			"settings":
+			{
+				"buffer_size": 325,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/c/Proyectos/drupal-7.53/project.sublime-project",
+			"settings":
+			{
+				"buffer_size": 180,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> c:\\Proyectos\\drupal-7.53\\sites\\all\\modules\\weather_info\\weather_info.module\n  |+| 8\n  |+| 14\n",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "pi",
+		"selected_items":
+		[
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: bs3-alert"
+			],
+			[
+				"x",
+				"Indent XML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"javas",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"indent",
+				"Auto indent"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"anf c",
+				"ANF: Copy Current File"
+			],
+			[
+				"anf re",
+				"ANF: Rename File"
+			],
+			[
+				"i",
+				"Auto indent"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"xm",
+				"Indent XML"
+			],
+			[
+				"js",
+				"Indent JSON"
+			],
+			[
+				"json",
+				"Indent JSON"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"cop",
+				"ANF: Copy Current File"
+			],
+			[
+				"re",
+				"ANF: Rename File"
+			],
+			[
+				"copyf",
+				"ANF: Copy Current File"
+			],
+			[
+				"format",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"packa",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"gutterthe",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"package",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"mae",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"codeformatter",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"set syntax HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"heml",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"mc",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"ANF",
+				"ANF: Delete Current File"
+			],
+			[
+				"phpunit",
+				"PHPUnit: Run"
+			],
+			[
+				"php",
+				"PHP: Generate Getters and Setters"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				":vd",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"delete file",
+				"ANF: Delete Current File"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Extract Package"
+			]
+		],
+		"width": 456.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/c/Proyectos/drupal-7.53",
+		"/c/Proyectos/drupal-7.53/sites",
+		"/c/Proyectos/drupal-7.53/sites/all",
+		"/c/Proyectos/drupal-7.53/sites/all/modules",
+		"/c/Proyectos/drupal-7.53/sites/all/modules/weather_info",
+		"/c/Proyectos/drupal-7.53/sites/default"
+	],
+	"file_history":
+	[
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/c/Proyectos/drupal-7.53/phpinfo.php",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/c/Proyectos/drupal-7.53/index.php",
+		"/c/Proyectos/drupal-7.53/includes/menu.inc",
+		"/c/Proyectos/drupal-7.53/includes/bootstrap.inc",
+		"/c/Proyectos/drupal-7.53/includes/common.inc",
+		"/c/Proyectos/drupal-7.53/includes/language.inc",
+		"/c/Proyectos/drupal-7.53/sites/default/settings.php",
+		"/c/Proyectos/campusGoogle/API_KEYS.txt",
+		"/c/Proyectos/doskeys/doskey_macros.txt",
+		"/c/Proyectos/campusGoogle/app/main.js",
+		"/c/Proyectos/campusGoogle/app/background.js",
+		"/c/Proyectos/campusGoogle/app/window.html",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/app/module/serialCom/serialCom.js",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/builds/Drupal.sublime-build",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/app/module/serialPorts/serialPorts.js",
+		"/c/Proyectos/campusGoogle/app/app.data.js",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/index.html",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/app/core/app.js",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/app/core/app.data.js",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/app/module/serialOutput/serialOutput.js",
+		"/c/Proyectos/campusGoogle/app/manifest.json",
+		"/c/Proyectos/campusGoogle/Chrome-Serial-App/main.js",
+		"/c/Proyectos/campusGoogle/index.html",
+		"/c/Proyectos/proPHPRefactoring/composer.json",
+		"/c/Proyectos/proPHPRefactoring/phpunit.xml",
+		"/C/Proyectos/Bio/phpunit.xml",
+		"/C/Proyectos/Bio/composer.json",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relht.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relho.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relhm.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relbt.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/accessor.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/const.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/LICENSE",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/facade.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/meth.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/mutator.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/phpc.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/phpi.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/prop.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relbm.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/test.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/teardown.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/tbi.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/spec.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/setup.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/scope.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relmtm.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relmt.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relmbm.sublime-snippet",
+		"/C/Users/TecniUser/AppData/Roaming/Sublime Text 3/Packages/User/snippets/Sublime-Text-PHP-and-Laravel-Snippets-master/relmm.sublime-snippet",
+		"/C/Proyectos/test.php",
+		"/C/Proyectos/pangea_web/web/code/controllers/BookingController.php",
+		"/C/Users/TecniUser/Desktop/RQ_RP_Caldas_Procesocompleto_9AH7Z6M.txt",
+		"/C/Users/TecniUser/Desktop/rate_block.txt",
+		"/C/Proyectos/pangea_web/web/code/controllers/BookingDataController.php",
+		"/C/Proyectos/pangea_web/model/esb/ESBRateSelectionClient.php",
+		"/C/Proyectos/pangea_web/model/esb/ModelESBPackageServices.php",
+		"/C/Proyectos/pangea_web/model/esb/ESBClient.php",
+		"/C/Proyectos/pangea_web/model/esb/ModelESBPackageService.php",
+		"/C/Proyectos/pangea_web/model/esb/ESBPackageServiceAvailabilityClient.php",
+		"/C/Users/TecniUser/Desktop/RQ_RP_Caldas_Procesocompleto_K0LQGB4.txt",
+		"/C/Proyectos/pangea_web/model/PackageServiceModel.php",
+		"/C/Proyectos/pangea_web/model/VarietyDistributionModel.php",
+		"/C/Proyectos/pangea_web/model/Model.php",
+		"/C/Proyectos/pangea_web/model/esb/ModelESBVarietyInfo.php",
+		"/C/Proyectos/pangea_web/web/templates/booking/booking_activities_selector.html",
+		"/C/Proyectos/pangea_web/web/code/controllers/BookingPaymentController.php",
+		"/C/Proyectos/pangea_web/model/PackageModel.php",
+		"/C/Program Files (x86)/Ampps/apache/logs/pangea.web.local_ssl_error.log",
+		"/C/Proyectos/pangea_web/log/buildRequest_20170113.log",
+		"/C/Proyectos/pangea_web/web/templates/booking/booking_activities_modify.html",
+		"/C/Users/TecniUser/Desktop/flexible.html",
+		"/C/Users/TecniUser/Desktop/repangeamodificarhoras/descansolascaldas_21_01_2017_RS.txt",
+		"/C/Users/TecniUser/Desktop/repangeamodificarhoras/descansolascaldas_21_01_2017_RQ.txt",
+		"/C/Dropbox/Temporal/dogIndex.html",
+		"/C/Users/TecniUser/AppData/Roaming/SumatraPDF/SumatraPDF-settings.txt",
+		"/C/Proyectos/pangea_web/tests/BookingActivitiesControllerTest.php",
+		"/C/Dropbox/Public/resume.json",
+		"/C/Dropbox/Public/configuraciones/KeePass/url.txt",
+		"/C/Proyectos/Pangea/requestSOAP.txt",
+		"/C/Proyectos/Pangea/reviews_TASK.txt",
+		"/C/ProgramData/MacheenService/update-installer.log",
+		"/C/ProgramData/LastUpdate.xml",
+		"/C/ProgramData/Western Digital/Logs/WD Security/TecniUser/WD Drive Unlock.log",
+		"/C/Users/TecniUser/Desktop/Descanso en caldas_OK.txt",
+		"/C/Proyectos/pangea_web/web/templates/component_booking.html",
+		"/C/Proyectos/pangea_web/web/code/controllers/ProductController.php",
+		"/C/Proyectos/pangea_web/web/code/helpers/ContentComponents.php",
+		"/C/Proyectos/pangea_web/log/booking_20170102.log",
+		"/C/Proyectos/pangea_web/web/code/controllers/BookingActivitiesController.php",
+		"/C/Proyectos/pangea_web/config/config.cfg",
+		"/c/Proyectos/Personal/PHPPatterns/Adapter/src/KindleAdapter.php",
+		"/c/Proyectos/pangea_web/web/code/controllers/-",
+		"/c/Proyectos/pangea_web/model/PackageModel.php",
+		"/c/Proyectos/pangea_web/model/TravellerModel.php",
+		"/c/Proyectos/pangea_web/web/code/controllers/BookingSummaryController.php",
+		"/c/Proyectos/suyttest/resources/views/web/partials/tablet/latest.blade.php",
+		"/C/Proyectos/suyttest/.git/COMMIT_EDITMSG",
+		"/c/Proyectos/suyttest/database/migrations/2016_12_05_150656_create_works_table.php",
+		"/c/Proyectos/suyttest/resources/views/web/partials/header.blade.php",
+		"/c/Proyectos/suyttest/resources/lang/es/literals.php",
+		"/c/Proyectos/suyttest/resources/lang/en/literals.php",
+		"/c/Proyectos/suyttest/app/Http/routes.php",
+		"/c/Proyectos/suyttest/resources/views/web/home.blade.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/Auth/AuthController.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/AdminEventController.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/Auth/PasswordController.php",
+		"/c/Proyectos/suyttest/.env",
+		"/c/Proyectos/suyttest/storage/framework/views/63b7e300c59fe88235df4ea9b2a7853a91e2cdd4.php",
+		"/c/Proyectos/suyttest/resources/views/layouts/app.blade.php",
+		"/c/Proyectos/suyttest/.env.PRE",
+		"/c/Proyectos/suyttest/public/js/interaction.js",
+		"/c/Proyectos/suyttest/storage/framework/views/b813c0013ec673cdf544b0a69d65c813dfdd65a7.php",
+		"/c/Proyectos/suyttest/resources/views/web/partials/modalCookiesInfo.blade.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/WorkController.php",
+		"/c/Proyectos/suyttest/resources/views/web/partials/modalMenu.blade.php",
+		"/c/Proyectos/suyttest/resources/views/web/partials/footer.blade.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/AdminWorkController.php",
+		"/c/Proyectos/suyttest/app/Http/Controllers/EventController.php",
+		"/c/Proyectos/suyttest/resources/views/admin/partials/events/form.blade.php",
+		"/c/Proyectos/suyttest/resources/views/admin/events/create.blade.php",
+		"/c/Proyectos/suyttest/resources/views/admin/events/edit.blade.php",
+		"/c/Proyectos/suyttest/resources/views/web/diary.blade.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\Users\\TecniUser\\AppData\\Roaming\\Sublime Text 3\\Packages\\User",
+			"C:\\Proyectos\\pangea_web\\model",
+			"C:\\Proyectos\\pangea_web\\web",
+			"/web/*",
+			"/web",
+			":",
+			"C:\\Proyectos\\pangea_web\\",
+			"<open folders>,C:\\Proyectos\\pangea_web",
+			"<open folders>",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"terminal",
+			"Andrea Marco Sartori",
+			"dump",
+			"        \n",
+			"dump(",
+			"dump",
+			"a577b08d-dc22-40e6",
+			"dump",
+			"set('SESSION.alternativePackage",
+			"--",
+			"dump",
+			"b092a30e-1d5f-42a3",
+			"77c331f8-f5ad-4b9e",
+			"ae114cc2-2e27-45c2",
+			"77c331f8-f5ad-4b9e",
+			"></",
+			"p",
+			"></",
+			"booking_activities_selector.html",
+			"div class=\"activity\"",
+			"dump",
+			"d0d2b08a-6178-4462",
+			"f052e470-b739-4900",
+			"11:11",
+			"d0d2b08a-6178-4462",
+			"<?xml version='1.0'?>",
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"->format('",
+			"->format('H:",
+			"component_booking.html",
+			"<!-- Module Booking -->",
+			"Module Booking",
+			"dump",
+			"<a href=\"#\" data-type=\"activities_alt\" data-idx=\"{{ intval(@iActivityIndex) }}\"\n                                           class=\"showinfobox\">\n                                            {{ @dict.booking.activities.more_info }}\n                                        </a>",
+			"Kindle",
+			"kindle",
+			"<token>YTU3N2IwOGQtZGMyMi00MGU2I1RSQVZFTElPX0JVWSM5OTgwMWZjZS1jNjQ1LTQ1MzkjOGE3NDViMmMtZDg4Ni00MjAyIzBhMTcyNDIwLTJkMGUtNDQ3OSNJTl9BR1JFRU1FTlQjMSN0cnVlI2ZhbHNlIzE0ODIzMTM5Mjk2NDMjMjgyZTZiZDgtNWZjNS00MjM1IzExMDE5Y2I3LTEwMjYtNDBlMyNhZGYzYTUwYS0wYjZhLTRmMzMjNWI3ZGQ4NjgtYTk5MS00NzAxIzJmNGRjNGYwLTU4MWMtNGY2NSMyM2RjMTdiMS1hMDhjLTQ1ZGMjMTIwLjAwIzkwLjk2I1BVQkxJQyM5ODg2YjI4Ny03YTA1LTQ5OGMjU0VMTCNFVVIjRVVSIzMxOGM5YTlkLThjY2YtNDY2NCM0NWM4YzBhNC0wMjY2LTRkODMjNDVjOGMwYTQtMDI2Ni00ZDgzIzQ1YzhjMGE0LTAyNjYtNGQ4MyM0NWM4YzBhNC0wMjY2LTRkODMjIyMjIyMjIyMjIyMjIyMjIyMjMDJjMzkyMWQtNjczMC00ZDI0I1lKS2MyOFN3azZRL3ZrL2tmbEo0S3VZdStnUT0=</token>",
+			"dump",
+			"paxesReferences",
+			"activity-container",
+			"dump($",
+			"dump",
+			">>>",
+			"arrayAlternativeDates",
+			"dump",
+			"createFromAvailabilityResponse",
+			"dump",
+			"mandatory",
+			"hasMoreOptions",
+			"log",
+			"hasM",
+			"hasMoreop",
+			"hasm",
+			"hasMore",
+			"getCMSActivities",
+			"///",
+			"clearAltern",
+			"///",
+			"////",
+			"setHasMoreOptions",
+			"setMoreOptions",
+			"createFromAvailabilityResponse",
+			"social-widget",
+			"dump",
+			"dum",
+			"getPackageServiceAvailabilityClient",
+			"dump",
+			"unset",
+			"dump",
+			"AsiderCol",
+			"chang",
+			"SESSION.PackageServicesForActivities",
+			"dump",
+			"dump\n",
+			");\n",
+			"SESSION.alte",
+			"modif",
+			"getCheckin",
+			"dum",
+			"getArrayForSelectAlternativeActivities",
+			"dump",
+			"PackageServicesForActivities",
+			"dump",
+			"selectable_items",
+			"dump",
+			");\n",
+			"component_lightbox_activities.html",
+			"infobox_swipe_activities_tpl",
+			"component_booking.html",
+			"var plan",
+			"dump",
+			"orderedJSONActivities",
+			"dump",
+			"///",
+			"dump",
+			"component_booking.html",
+			"durationPackage",
+			"planDurationDays",
+			"booking/product",
+			"infobox_swipe_hotels_tpl",
+			"component_lightbox_login.html",
+			"<!-- Ends Log-in Popup-->",
+			"\n<!-- Ends Log-in Popup-->\n<!-- Ends Log-in Popup-->\n",
+			"<!-- Ends Log-in Popup-->\n<!-- Ends Log-in Popup-->\n<!-- Ends Log-in Popup-->\n",
+			"return $da",
+			"stop",
+			"/////",
+			"////",
+			"getPackageServiceAvailabilityClient",
+			"dum",
+			"getArrayForSelectAlternativeActivities",
+			"changePeople",
+			"dump",
+			"dateCheckoutFromUser",
+			"<!--end module footer-seo--> ",
+			"mouseflow",
+			"scripts_google_analytics.html",
+			"hotjar",
+			"ESBPackageServiceAvailabilityClient",
+			"isAccommodation",
+			"dump",
+			"changeHoursByDay",
+			"alternativeDatesForActivities",
+			"38, 50, 56",
+			"sendBooking",
+			"'extraDays'",
+			"extraDays",
+			"createSendParams"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Andrés Cuervo Adame (kuerbo@gmail.com)",
+			"37, 43, 57"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 0,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.info",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 7,
+							"syntax": "Packages/Drupal/Drupal Info File/Drupal Info Files.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/c/Proyectos/drupal-7.53/sites/all/modules/weather_info/weather_info.module",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										165,
+										166
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										50,
+										51
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 7,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/c/Proyectos/drupal-7.53/project.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								51
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										94,
+										95
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										19,
+										20
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 4,
+							"syntax": "Packages/zz File Icons/dist/languages/JSON (Sublime).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 0,
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 0,
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 0,
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Facebook (SL).tmTheme",
+							"function_name_status_row": 3,
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 286.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/builds/Drupal.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bookingcontroller",
+				"web\\code\\controllers\\BookingController.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"",
+				"src\\Kindle.php"
+			],
+			[
+				"interac",
+				"public\\js\\interaction.js"
+			],
+			[
+				"packageser",
+				"model\\PackageServiceModel.php"
+			],
+			[
+				"booking.",
+				"maqueta\\js\\booking.js"
+			],
+			[
+				"booking-price",
+				"maqueta\\js\\components\\booking-price.js"
+			],
+			[
+				"infobox",
+				"maqueta\\js\\components\\infobox.js"
+			],
+			[
+				"booking_activities_se",
+				"web\\templates\\booking\\booking_activities_selector.html"
+			],
+			[
+				"people",
+				"maqueta\\js\\components\\people-selector.js"
+			],
+			[
+				"appserv",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"flyercon",
+				"tests\\controllers\\FlyersControllerTest.php"
+			],
+			[
+				"foocontr",
+				"app\\Http\\Controllers\\FooController.php"
+			],
+			[
+				"container",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$(DESTDIR)$(PREFIX)/include/sass:"
+			]
+		],
+		"width": 1510.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"38":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"39":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"40":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"42":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"43":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"44":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"58":
+				{
+					"group": 0,
+					"index": 6
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 355.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

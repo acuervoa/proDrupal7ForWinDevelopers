@@ -1,0 +1,79 @@
+<?php
+// $Id$
+
+include_once('weather_info.inc');
+
+function weather_info_block_info() {
+  $blocks['user_custom'] = array(
+    'info'  => t('Weather block custom for each user'),
+  );
+  return $blocks;
+}
+
+function weather_info_block_view($delta='') {
+
+  $block = null;
+  $block_content = null;
+
+  $unit = 'C';
+  $language = 'es';
+  $location = variable_get('current_location', null);
+  if ($location) {
+    $weather = weather_info_get_weather($location, $language);
+    if($weather) {
+      $unit_system = 'US';
+      $current = $weather->current_observation;
+      $block_content .= '<div class="currentConditions">';
+      $block_content .= "<img src='{$current->icon_url}'>";
+      $block_content .= '<br/>';
+      $block_content .= sprintf('%s, %s<br>', $current->weather, weather_info_temp($current->temp_c, $unit, $unit_system));
+      $block_content .= $current->wind_string . '<br/>';
+      $block_content .= $current->relative_humidity;
+      $block_content .= '</div>';
+    } 
+    else {
+      form_set_error('weather_location', t('Location, @loc not found.', array('@loc' => $location)));
+      variable_set('current_location', null);
+      $block['subject'] = t('Get Weather');
+    }
+  }
+  
+  $temp = drupal_get_form('weather_location_form');
+  $block_content .= drupal_render($temp);
+  $block['content'] = $block_content;
+
+  return $block;
+}
+
+function weather_location_form($form_in, &$form_state) {
+  $form['wx_info_title'] = array (
+    '#value' => t('Location'),
+    );
+  $form['wx_info']['weather_location'] = array (
+    '#type' => 'textfield',
+    '#size' => 20,
+    '#maxlengh' => 20,
+    );
+  $form['wx_info']['weather_location_submit'] = array (
+    '#type' => 'submit',
+    '#value' => t('Search'),
+    );
+  $form['#action'] = "/";
+
+  return $form;
+}
+
+
+function weather_location_form_validate($form, $form_state) {
+  $location = trim($form_state['values']['weather_location']);
+  $weather = weather_info_get_weather($location, 'es');
+  if (!$weather) {
+    form_set_error('weather_location', t('Location %location not found.', array('%location' => $location)));
+  }
+}
+
+
+function weather_location_form_submit($form, $form_state) {
+  $location = trim($form_state['values']['weather_location']);
+  variable_set('current_location', $location);
+}
