@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+      "follow_symlinks": true,
+			"path": "c:\\Proyectos\\drupal-7.53"
+		}
+	],
+  "settings": {
+    "xdebug": {
+      "url": "http://drupal.local",
+    }
+  }
+}
