@@ -1,0 +1,198 @@
+<?php
+// $Id$
+
+include_once('weather_info.inc');
+
+function weather_info_block_info() {
+  $blocks['user_custom'] = array(
+    'info'  => t('Weather block custom for each user'),
+  );
+  return $blocks;
+}
+
+function weather_info_block_view($delta='') {
+
+  $block = null;
+  $block_content = null;
+
+  $unit = variable_get('default_units', 'C');
+  $language = variable_get('default_language','es');
+  $location = variable_get('current_location', null);
+  if ($location) {
+    $weather = weather_info_get_weather($location, $language);
+    if($weather) {
+      $unit_system = 'SI';
+      $current = $weather->current_observation;
+      $block_content .= '<div class="currentConditions">';
+      $block_content .= "<img src='{$current->icon_url}'>";
+      $block_content .= '<br/>';
+      $block_content .= sprintf('%s, %s<br>', $current->weather, weather_info_temp($current->temp_c, $unit, $unit_system));
+      $block_content .= $current->wind_string . '<br/>';
+      $block_content .= $current->relative_humidity;
+      $block_content .= '</div>';
+    } 
+    else {
+      form_set_error('weather_location', t('Location, @loc not found.', array('@loc' => $location)));
+      variable_set('current_location', null);
+      $block['subject'] = t('Get Weather');
+    }
+  }
+  
+  $temp = drupal_get_form('weather_location_form');
+  $block_content .= drupal_render($temp);
+  $block['content'] = $block_content;
+
+  return $block;
+}
+
+function weather_location_form($form_in, &$form_state) {
+  $form['wx_info_title'] = array (
+    '#value' => t('Location'),
+    );
+  $form['wx_info']['weather_location'] = array (
+    '#type' => 'textfield',
+    '#size' => 20,
+    '#maxlengh' => 20,
+    );
+  $form['wx_info']['weather_location_submit'] = array (
+    '#type' => 'submit',
+    '#value' => t('Search'),
+    );
+  $form['#action'] = "/";
+
+  return $form;
+}
+
+
+function weather_location_form_validate($form, $form_state) {
+  $location = trim($form_state['values']['weather_location']);
+  $weather = weather_info_get_weather($location, 'es');
+  if (!$weather) {
+    form_set_error('weather_location', t('Location %location not found.', array('%location' => $location)));
+  }
+}
+
+
+function weather_location_form_submit($form, $form_state) {
+  $location = trim($form_state['values']['weather_location']);
+  variable_set('current_location', $location);
+}
+
+
+function weather_info_menu() {
+  $items['admin/config/weather_info'] = array(
+    'title' => 'Weather Info Configuration',
+    'description' => 'Configuration settings for the Weather Information block.',
+    'page callback' => 'system_admin_menu_block_page',
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+    'access arguments' => array('administer weather info'),
+  );
+
+  $items['admin/config/weather_info/settings'] = array(
+    'title' => 'Weather Information settings',
+    'description' => 'Set defaults and unit types for weather display.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('wx_admin_settings'),
+    'access arguments' => array('administer weather info'),
+  );
+
+  return $items;
+}
+
+function wx_admin_settings() {
+  $form['wx_settings'] = array (
+    '#type' => 'fieldset',
+    '#title' => t('Weather defaults')
+  );
+
+  $form['wx_settings']['default_location'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Default location'),
+    '#default_value' => variable_get('default_location',null),
+    '#size' => 20,
+    '#maxlengh' => 20,
+    '#description' => t('Enter a location on earth to act as the default for the site.'),
+  );
+
+  $form['wx_settings']['default_units'] = array (
+    "#type" => 'radios',
+    '#title' => t('Default units'),
+    '#options' => array(
+        'F' => t('Fahrenheit'),
+        'C' => t('Celsius'),
+        'K' => t('Kelvin'),
+        'R' => t('Rankine'),
+      ),
+    '#default_value' => variable_get('default_units', 'F'),
+    '#description' => t('Select the units desired for display of temperature'),
+  );
+
+  $form['wx_settings']['default_language'] = array (
+    '#type' => 'select',
+    '#title' => t('Language'),
+    '#options' => array(
+        'en' => t('English'),
+        'fr' => t('French'),
+        'it' => t('Italian'),
+        'de' => t('German'),
+        'es' => t('Spanish'),
+        'tr' => t('Turkish'),
+      ),
+    '#default_value' => variable_get('default_language', 'es'),
+    '#description' => t('Select the language desired.'),
+  );
+
+  $form['#submit'][] = 'wx_admin_settings_submit';
+  return system_settings_form($form);
+}
+
+function wx_admin_settings_validate($form, &$form_state) {
+  $location = $form_state['values']['default_location'];
+  if($location) {
+    $weather = weather_info_get_weather($location, 'es');
+    if(!$weather) {
+      form_set_error('default_location', t('Location %location not found.', array('%location' => $location)));
+    }
+  }
+  else {
+    form_set_error('default_location', t('Location cannot be blank.'));
+  }
+}
+
+function wx_admin_settings_submit($form, &$form_state) {
+  variable_set('default_units', $form_state['values']['default_units']);
+  variable_set('default_language', $form_state['values']['default_language']);
+  variable_set('default_location', $form_state['values']['default_location']);
+  variable_set('current_location', $form_state['values']['default_location']);
+}
+
+function weather_info_f_to_c($degrees_f) {
+  $celsius = ($degrees_f - 32) * 5 / 9;
+  return round($celsius);
+}
+
+function weather_info_c_to_f($degrees_c) {
+  $fahrenheit = ($degrees_c * 9 / 5) + 32;
+  return round($fahrenheit);
+}
+
+function weather_info_f_to_k($deegres_f) {
+  $kelvin = weather_info_f_to_c($deegres_f) + 273.15;
+  return round($kelvin);
+}
+
+function weather_info_c_to_k($degrees_c) {
+  $kelvin = $degrees_c + 273.15;
+  return round($kelvin);
+}
+
+function weather_info_f_to_r($degrees_f) {
+  $rankine = $degrees_f + 459.69;
+  return round($rankine);
+}
+
+function weather_info_c_to_r($degrees_c) {
+  $rankine = weather_info_c_to_f($degrees_c) + 459.69;
+  return round($rankine);
+}
