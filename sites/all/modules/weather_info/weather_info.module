@@ -12,24 +12,55 @@ function weather_info_block_info() {
 
 function weather_info_block_view($delta='') {
 
+  if (!user_access('view weather info')) {
+    return null;
+  }
+
   $block = null;
   $block_content = null;
 
-  $unit = variable_get('default_units', 'C');
-  $language = variable_get('default_language','es');
-  $location = variable_get('current_location', null);
+  global $user;
+  
+  $user_profile = user_load($user->uid);
+  if (isset($user_profile->field_weather_unit['und'][0]['value'])
+    && ($user_profile->field_weather_unit['und'][0]['value'] != '')) {
+      $unit = substr($user_profile->field_weather_unit['und'][0]['value'], 0 , 1);
+  }else{
+    $unit = variable_get('default_units', 'F');
+  }
+
+  if (isset($user_profile->field_weather_language['und'][0]['value'])
+    && ($user_profile->field_weather_language['und'][0]['value'] != '')){
+      $language = substr($user_profile->field_weather_language['und'][0]['value'], 0 , 2);
+  }else{
+      $language = variable_get('default_language','en');
+  }
+  
+  if (isset($user_profile->field_weather_location['und'][0]['value'])
+    && ($user_profile->field_weather_location['und'][0]['value'] != '')) {
+      $location = $user_profile->field_weather_location['und'][0]['value'];
+  }else{
+      $location = variable_get('current_location', null);    
+  }
+  
+  
   if ($location) {
     $weather = weather_info_get_weather($location, $language);
     if($weather) {
       $unit_system = 'SI';
       $current = $weather->current_observation;
-      $block_content .= '<div class="currentConditions">';
-      $block_content .= "<img src='{$current->icon_url}'>";
-      $block_content .= '<br/>';
-      $block_content .= sprintf('%s, %s<br>', $current->weather, weather_info_temp($current->temp_c, $unit, $unit_system));
-      $block_content .= $current->wind_string . '<br/>';
-      $block_content .= $current->relative_humidity;
-      $block_content .= '</div>';
+
+      $block_content .= theme('current',
+        array(
+          'img' => $current->icon_url,
+          'condition' => $current->weather,
+          'temp' => $current->temp_c,
+          'unit' => $unit,
+          'wind' => $current->wind_string,
+          'humidity' => $current->relative_humidity,
+          )
+      );
+      $block['subject'] = $location;
     } 
     else {
       form_set_error('weather_location', t('Location, @loc not found.', array('@loc' => $location)));
@@ -38,8 +69,12 @@ function weather_info_block_view($delta='') {
     }
   }
   
-  $temp = drupal_get_form('weather_location_form');
-  $block_content .= drupal_render($temp);
+  if (user_access('change weather location')){
+    $temp = drupal_get_form('weather_location_form');
+    $block_content .= drupal_render($temp);
+  }
+  
+
   $block['content'] = $block_content;
 
   return $block;
@@ -75,7 +110,10 @@ function weather_location_form_validate($form, $form_state) {
 
 function weather_location_form_submit($form, $form_state) {
   $location = trim($form_state['values']['weather_location']);
-  variable_set('current_location', $location);
+  global $user;
+  $user_profile = user_load($user->uid);
+  $user_profile->field_weather_location['und'][0]['value'] = $location;
+  field_attach_update('user', $user_profile);
 }
 
 
@@ -195,4 +233,77 @@ function weather_info_f_to_r($degrees_f) {
 function weather_info_c_to_r($degrees_c) {
   $rankine = weather_info_c_to_f($degrees_c) + 459.69;
   return round($rankine);
+}
+
+
+function weather_info_permission() {
+  return array(
+    'administer weather info' => array(
+      'title' => t('Administer weather information'),
+      'description' => t('Set global site information for language, units, and location.'),
+    ),
+    'view weather info' => array(
+      'title' => t('View weather information'),
+      'description' => t('View the site-wide weather information on pages.'),
+    ),
+    'change weather location' => array (
+      'title' => t('Change weather location'),
+      'description' => t('Change the current location for weather information.'),
+    ),
+  );
+}
+
+function weather_info_profile_weather_location_validate($element, &$form_state) {
+  $location = $form_state['values']['field_weather_location']['und'][0]['value'];
+  if (variable_get('default_location') != $location) {
+    $weather = weather_info_get_weather($location, 'en');
+    if (!$weather) {
+      form_set_error('field_weather_location[und][0][value]',
+        t('Cannot get weather for %location,',
+        array('%location' => $location)));
+    }
+  }
+}
+
+function weather_info_form_user_profile_form_alter(&$form, &$form_state) {
+  $form['profile_weather_location']['#element_validate'][] =
+    'weather_info_profile_weather_location_validate';
+}
+
+function theme_current($variables) {
+  $img = $variables['img'];
+  $condition = $variables['condition'];
+  $temp = $variables['temp'];
+  $unit = $variables['unit'];
+  $wind = $variables['wind'];
+  $humidity = $variables['humidity'];
+
+  $content = null;
+  $content .= '<div class="currentConditions">';
+  $content .= "<img src='{$img}'><br>";
+  $content .= sprintf('%s, %s<br>', $condition, weather_info_temp($temp, $unit, 'SI'));
+  $content .= $wind . '<br/>';
+  $content .= $humidity;
+  $content .= '</div>';
+
+  return $content;
+}
+
+function weather_info_theme() {
+  return array(
+    'current' => array(
+      'arguments' => array(
+        'img' => NULL,
+        'condition' => NULL,
+        'temp' => NULL,
+        'unit' => NULL,
+        'wind' => NULL,
+        'humidity' => NULL
+      )
+    )
+  );
+}
+
+function weather_info_preprocess(&$variables) {
+  $variables['module_secret_word'] = 'goose';
 }

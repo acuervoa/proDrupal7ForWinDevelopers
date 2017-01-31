@@ -1,0 +1,206 @@
+<?php
+
+class WeatherTempTest extends DrupalUnitTestCase {
+
+    public static function getInfo() {
+        return array(
+            'name' => 'Temperature tests',
+            'description' => 'Tests temperature conversions.',
+            'group' => 'Weather info',
+        );
+    }
+
+    // tests go here
+
+    function testFtoC(){
+        $out_temp = weather_info_temp(32, 'C', 'US');
+        $this->assertEqual($out_temp, '0&deg;C', t('F to C conversion'));
+
+        $out_temp = weather_info_temp('thirty-two', 'C', 'US');
+        $this->assertNull($out_temp, 'F to C conversion with bad type.');
+
+        $out_temp = weather_info_temp(32, 'F', 'US');
+        $this->assertEqual($out_temp, '32&deg;F', t('F to C conversion'));
+
+        $out_temp = weather_info_temp(10, 'C', 'SI');
+        $this->assertEqual($out_temp, '10&deg;C', t('C to C conversion'));
+
+        $out_temp = weather_info_temp(32, 'K', 'US');
+        $this->assertEqual($out_temp, '273&deg;K', t('F to K conversion'));
+
+        $out_temp = weather_info_temp(10, 'K', 'SI');
+        $this->assertEqual($out_temp, '283&deg;K', t('C to K conversion'));
+
+        $out_temp = weather_info_temp(32, 'R', 'US');
+        $this->assertEqual($out_temp, '492&deg;R', t('F to R conversion'));
+
+        $out_temp = weather_info_temp(10, 'R', 'SI');
+        $this->assertEqual($out_temp, '510&deg;R', t('C to R conversion'));
+    }
+}
+
+
+class WeatherBlockTest extends DrupalWebTestCase {
+    
+    public function setUp()
+    {
+        // Enable any modules required for the test
+        parent::setUp(array(
+            'weather_info',
+            'block',
+        ));
+
+        // Create and log in our privileged user.
+        $this->test_user = $this->drupalCreateUser(array(
+            'view weather info',
+            'change weather location',
+            'administer weather info',
+            'administer site configuration',
+            'administer users',
+            'access user profiles',
+            'administer blocks',
+            'access administration pages',
+        ));
+        $this->drupalLogin($this->test_user);
+
+
+        // *
+        // * Weather location field
+        // *
+
+        $field = array(
+            'field_name' => 'field_weather_location',
+            'type' => 'text',
+            'translatable' => TRUE,
+        );
+        $instance = array(
+            'field_name' => 'field_weather_location',
+            'entity_type' => 'user',
+            'bundle' => 'user',
+            'label' => 'Weather location',
+            'widget' => array(
+                'type' => 'text_textfield',
+                'weight' => '15',    
+            ),
+            'description' => st('Enter a location on earth for wich you would like to see weather information presented.'),
+        );
+
+        field_create_field($field);
+        field_create_instance($instance);
+
+        // *
+        // * Weather language $field
+        // *
+
+        $field = array(
+            'field_name' => 'field_weather_language',
+            'type' => 'list_text',
+            'translatable' => TRUE,
+            'settings' => array(
+                'allowed_values' => "en|English\nes|Spanish\nde|German\ntr|Turhish\nfr|French\n",
+                'allowed_values_function' => '',
+            ),
+        );
+        $instance = array(
+            'field_name' => 'field_weather_language',
+            'entity_type' => 'user',
+            'bundle' => 'user',
+            'label' => 'Weather language',
+            'widget' => array(
+                'type' => 'options_select',
+                'weight' => '16',
+            ),
+            'description' => st('Enter the language in which you would like to see weather information presented.'),
+            'default_value' => array(
+                array(
+                    'value' => 'en'
+                ),
+            ),
+        );
+
+        field_create_field($field);
+        field_create_instance($instance);
+
+        // *
+        // * Weather units field
+        // *
+        $field = array(
+            'field_name' => 'field_weather_unit',
+            'type' => 'list_text',
+            'translatable' => TRUE,
+            'settings' => array(
+                'allowed_values' => "F|Fahrenheit\nC|Celsius\nK|Kelvin\nR|Rankine",
+                'allowed_values_function' => '',
+            ),
+        );
+        $instance = array(
+            'field_name' => 'field_weather_unit',
+            'entity_type' => 'user',
+            'bundle' => 'user',
+            'label' => 'Weather units',
+            'widget' => array(
+                'type' => 'options_select',
+                'weight' => '17',
+            ),
+            'description' => st('Enter the measurement unit with which you would like to see wether information presented.'),
+            'default_value' => array(
+                array(
+                    'value' => 'F',
+                ),
+            )
+        );
+        field_create_field($field);
+        field_create_instance($instance);
+
+        $uid = $this->test_user->uid;
+
+        $edit = array(
+            'field_weather_location[und][0][value]'  => 'san francisco',
+            'field_weather_language[und]' => 'en',
+            'field_weather_unit[und]' => 'F',
+        );
+
+        $this->drupalPost("user/{$uid}/edit", $edit, 'Save');
+        $this->assertRaw(t('The changes have seen saved.'), t('Check that profile was updated'));
+
+    }
+    
+    public static function getInfo() {
+        return array(
+            'name' => t('Weather block tests'),
+            'description' => t('Test the weather block.'),
+            'group' => 'Weather info',
+        );
+    }
+
+    function testDoNothing() {
+        $this->assertNull(null, 'just a stub');
+    }
+
+    //... actyak tests go here
+
+    function testDisplayLocation() {
+        $edit = array(
+            'blocks[weather_info_user_custom][region]' => 'sidebar_second',
+        );
+
+        $this->drupalPost('admin/structure/block', $edit, 'Save blocks');
+        $this->assertRaw(t('The block settings have been updated.'),
+            t('Check that configuration is saved'));
+
+       /* variable_set('default_units', 'R');
+        variable_set('default_language', 'de');
+        variable_set('default_location', 'san francisco');
+
+        $this->drupalGet('node');
+        $this->assertRaw(t('San Francisco, CA'), t('Check that the block displayed'));*/
+    }
+
+    function testUserLocationChange() {
+        $edit = array (
+            'weather_location' => 'manhattan',
+        );
+        $this->drupalPost('/', $edit, 'Search');
+        $this->assertRaw(t('New York, NY'), t('Check that the location was found'));
+    }
+}

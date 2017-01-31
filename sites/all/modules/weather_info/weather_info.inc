@@ -16,7 +16,14 @@ function weather_info_get_weather($location, $language) {
   }
   return $weather;
 }
+
+
 function weather_info_temp($in_temp, $unit, $unit_system) {
+
+  if (is_string($in_temp)) {
+    return null;
+  }
+  
   switch ($unit) {
     case 'C':
       if ($unit_system == 'SI') {
@@ -47,6 +54,6 @@ function weather_info_temp($in_temp, $unit, $unit_system) {
       }
       break;
   }
-  return sprintf('%s&deg;%a', $in_temp, $unit);
+  return sprintf('%s&deg;%s', $out_temp, $unit);
 }
 

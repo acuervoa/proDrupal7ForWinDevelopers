@@ -5,4 +5,6 @@ package = Cool stuff from Brian
 core = 7.x
 files[]  = weather_info.module
 files[]  = weather_info.inc
+files[] = tests/weather_info.test
+
 version = 7.x-0.as-alpha-as-it-gets

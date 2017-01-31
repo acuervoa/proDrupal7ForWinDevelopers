@@ -1,0 +1,21 @@
+.block-weather-info.block {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.block-weather-info h2 {
+    font-family: Arial Narrow;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.currentConditions {
+    font-family: Arial Narrow;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.currentConditions img {
+    width: 100px;
+}
